@@ -4,7 +4,7 @@
 ## UFO finder 
 Let's visualize UFO sightings data in a web browser! This is important because we can access and filter the data in the front-end. 
 
-## Requiremnts 
+## Requirements 
 - Web browser (ideally, Google Chrome)
 
 ## Getting started 
