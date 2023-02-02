@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>UFO Finder</title>
+  <title>TAP: DEMO</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
 
@@ -22,24 +22,23 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">UFO Sightings
-            <i class="fas fa-user-astronaut"></i>
+          <a class="navbar-brand" href="index.html">TAP: DEMO
+            <i class="fas fa-user"></i>
           </a>
         </div>
       </div>
     </nav>
     <div class="hero text-center">
-      <h1>UFO Sightings</h1>
-      <p>The Truth is Out There</p>
+      <h1>Find your next therapist here.</h1>
+      <p>What are your needs?</p>
     </div>
     <div class="container">
       <div class="row margin-top-50">
         <div class="col-md-12">
-            <h2>Results Summary</h2>
-            <h4>Filter the data of reported UFO sightings on January 2010! </h4>
+            <h4>Filter the data of an example TAP dataset.</h4>
         </div>
       </div>
-      <div class="row margin-top-50">
+      <div class="row justify-content-md-center"> 
         <div class="col-md-2">
           <aside class="filters">
             <div class="panel panel-default">
@@ -49,28 +48,25 @@
                   <div class="form-group text-center">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control text-center" id="datetime-input" type="text" placeholder="1/11/2011">
+                        <label for="date">Select a state:</label>
+                        <select id="selectState"></select>
                       </li>
-                      </ul>
                   </div>
-                  <button id="submit" type="submit" class="btn btn-default center-block">Filter Table</button>
+                  <button id="submit" type="submit" class="btn btn-default center-block">Search</button>
                 </form>
               </div>
             </div>
           </aside>
         </div>
         <div class="col-md-10">
-          <div id="table-area" class="">
-            <table id="ufo-table" class="table table-striped">
+          <div id="table-area">
+            <table id="therapist-table" class="table table-striped">
               <thead>
                 <tr>
-                  <th class="table-head">Date</th>
-                  <th class="table-head">City</th>
+                  <th class="table-head">Name</th>
+                  <th class="table-head">Email</th>
                   <th class="table-head">State</th>
-                  <th class="table-head">Country</th>
-                  <th class="table-head">Shape</th>
-                  <th class="table-head">Duration</th>
+                  <th class="table-head">Rate</th>
                   <th class="table-head">Comments</th>
                 </tr>
               </thead>
@@ -81,7 +77,7 @@
       </div>
     </div>
     <footer class="footer">
-      <span class="bottom">UFO Sightings</span>
+      <span class="bottom">TAP: DEMO</span>
     </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
